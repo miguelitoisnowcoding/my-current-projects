@@ -4,8 +4,150 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Courseware Copy</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/4.0.0/uicons-regular-straight/css/uicons-regular-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/4.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/4.0.0/uicons-thin-straight/css/uicons-thin-straight.css'>
 </head>
 <body>
-    
+    <header>
+        <nav>
+            <section class="nav-left-side">
+                <div>
+                    <button id="sideBarToggle"><i class="fi fi-rr-sidebar"></i></button>
+                </div>
+                <div>
+                    <a href=""><img src="" alt=""></a>
+                </div>
+            </section>
+            <section class="nav-right-side">
+                <div class="nav-bar">
+                    <button class="nav-bar-options" id="themeSwitcherBtn"><i class="fi fi-rr-sun"></i></button>
+                    <button class="nav-bar-options"><i class="fi fi-rs-bell"></i></button>
+                    <button class="nav-bar-options"><i class="fi fi-rr-comments"></i></button>
+                    <button class="nav-bar-options" id="profileBtn"><a href=""></a><i class="fi fi-rr-caret-down"></i></button>
+                </div>
+            </section>
+        </nav>
+    </header>
+    <main>
+
+        <!-- Sidebar -->
+        <aside class="sidebar-left">
+            <div class="sidebar-container">
+                <ul class="sidebar-navigations-list">
+                    <li><button><i class="fi fi-rs-home"></i><a href=""></a></button></li>
+                    <li><button><a href=""></a></button></li>
+                    <li><button><i class="fi fi-rr-calendar-minus"></i><a href=""></a></button></li>
+                    <li><button><i class="fi fi-ts-drawer-empty"></i><a href=""></a></button></li>
+                </ul>
+            </div>
+            <div class="sidebar-container">
+                <button class="courseware-options-toggle"><i></i>My Courses <span id="courseAmt">2</span></button>
+            </div>
+        </aside>
+
+        <!-- Courseware -->
+        <section class="courseware-main">
+            <header>
+                <h2 id="page-title"></h2>
+                <div class="button-container">
+                    <button class="coursewareBtn" type="submit"><i class="fi fi-rr-filter"></i>All<i class="fi fi-rr-caret-down"></i></button>
+                    <button class="coursewareBtn" type="submit"><i class="fi fi-rr-sort-amount-up-alt"></i>Sort by course name<i class="fi fi-rr-caret-down"></i></button>
+                    <button class="coursewareBtn" type="submit"><i class="fi fi-rr-apps"></i>Card<i class="fi fi-rr-caret-down"></i></button>
+                </div>
+                <div id="searchBar-Container">
+                    <i class="fi fi-rr-search"></i>
+                    <textarea name="searchBar" id="searchBar" cols="40" rows="2"></textarea>
+                </div>
+            </header>
+
+            <!-- Courseware Grid -->
+            <div id="courseware-grid">
+                <article class="courseware-grid-item">
+                    <header class="courseware-item-header">
+                        <img src="" alt="">
+                        <button><i class="fi fi-rr-symbol"></i></button>
+                    </header>
+                    <div class="courseware-item-information">
+                        <h2 class="courseware-item-title"><a href=""></a></h2>
+                        <h3 class="courseware-item-category"></h3>
+                    </div>
+                    <footer class="courseware-item-progress">
+                        <i class="fi fi-rr-arrow-trend-up"></i>
+                        <div class="progress-bar-container">
+                            <p class="courseware-progress-num"></p>
+                            <div class="progress-bar"></div>
+                        </div>
+                    </footer>
+                </article>
+            </div>
+            <div class="course-size-container">
+                <button class="courseResizeBtn"><i class="fi fi-rr-eye"></i><span class="courseAmt">12</span><i class="fi fi-rr-caret-down"></i></button>
+            </div>
+        </section>
+
+        <!-- Block Drawer -->
+        <aside class="sidebar-right">
+            <button id="blockDrawerToggle"><i class="fi fi-rr-sidebar-flip"></i></button>
+            <button id="closeBarBtn"><span></span></button>
+            <div class="block-drawer-container">
+                <h2></h2>
+                <article>
+                    <figure>
+                        <figcaption></figcaption>
+                    </figure>
+                    <div>
+                        <h3 class="item-title"></h3>
+                        <p class="item-description"></p>
+                    </div>
+                </article>
+                <article>
+                    <figure>
+                        <figcaption></figcaption>
+                    </figure>
+                    <div>
+                        <h3 class="item-title"></h3>
+                        <p class="item-description"></p>
+                    </div>
+                </article>
+            </div>
+        </aside>
+
+        <!-- Footer / Contact Details -->
+        <footer>
+            <div class="contact-details=container">
+                <p class="contact-details">
+                    <i class="fi fi-rr-globe"></i>
+                    <a href="https://www.addu.edu.ph/">
+                        Ateneo de Davao University
+                    </a>
+                </p>
+                <p class="contact-links">
+                    <i class="fi fi-rr-mobile-button"></i>
+                    Landline:
+                    <a href="tel:+63822212411">
+                        +63 (82) 221-2411
+                    </a>
+                </p>
+                <p class="contact-links">
+                    <i class="fi fi-rs-envelope"></i>
+                    <a href="emailto:shs.osahelpdesk@addu.edu.ph">
+                        shs.osahelpdesk@addu.edu.ph
+                    </a>
+                </p>
+            </div>
+            <div class="social-media-icons-container">
+                <a href="" class="social-media-links"><img src="assets/icons/facebook.png" alt="facebook icon"></a>
+                <a href="" class="social-media-links"><img src="assets/icons/twitter.png" alt="twitter icon"></a>
+                <a href="" class="social-media-links"><img src="assets/icons/youtube.png" alt="youtube icon"></a>
+                <a href="" class="social-media-links"><img src="assets/icons/instagram.png" alt="instagram icon"></a>
+            </div>
+            <div class="site-contact-information-container">
+                <p class="site-information"><a href="https://hurtado25.addu.edu.ph/user/contactsitesupport.php">Contact site support</a></p>
+                <p class="site-information"><a href="https://hurtado25.addu.edu.ph/admin/tool/dataprivacy/summary.php">Data retention summary</a></p>
+            </div>
+        </footer>
+    </main>
 </body>
 </html>
