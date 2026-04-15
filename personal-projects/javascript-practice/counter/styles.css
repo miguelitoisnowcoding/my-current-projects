@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: 'Courier New';
+}
+
+.flex-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.counter-container {
+  margin: 20px;
+  padding: 10px;
+
+  border: 2px solid black;
+  width: 40%;
+
+  background-color: whitesmoke;
+}
+
+#myCounter {
+  font-size: 50px;
+  margin: 20px;
+}
+
+/* Button Styles */
+
+.counterBtns {
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: -1px 2px; 
+}
+
+#increaseBtn {
+  background-color: rgba(9, 211, 9, 0.219);
+}
+
+#increaseBtn:hover {
+  background-color: rgba(9, 211, 9, 0.432);
+}
+
+#increaseBtn:active {
+  background-color: rgba(9, 211, 9, 0.726);
+}
+
+#resetBtn {
+  background-color: rgba(255, 0, 0, 0.281);
+}
+
+#resetBtn:hover {
+  background-color: rgba(255, 0, 0, 0.466);
+}
+
+#resetBtn:active {
+  background-color: rgba(255, 0, 0, 0.699);
+}
+
+#decreaseBtn {
+  background-color: rgba(255, 255, 0, 0.377);
+}
+
+#decreaseBtn:hover {
+  background-color: rgba(255, 255, 0, 0.63);
+}
+
+#decreaseBtn:active {
+  background-color: rgba(255, 255, 0, 0.952);
+}
