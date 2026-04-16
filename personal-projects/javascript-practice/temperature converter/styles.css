@@ -1,0 +1,66 @@
+/* Global */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.flex-center { 
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Main */
+
+main {
+  margin: 20px;
+  padding: 20px;
+
+  border: 1px solid black;
+
+  min-width: 30%;
+}
+
+/* Header */
+
+header {
+  padding: 1em; 
+}
+
+/* Input Container */
+
+.input-container, .output-container {
+  width: 80%;
+  padding: 0.5em;
+}
+
+.radio-container {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0.5em 0 0.5em 0;
+
+  flex-wrap: wrap;
+}
+
+.input-container p {
+  display: inline;
+}
+
+#myTemp {
+  width: 60%;
+}
+/* footer */
+
+footer {
+  flex-direction: column;
+  padding: 1em;
+}
+
+#myBtn {
+  padding: 0.25em;
+  margin-bottom: 1em;
+}

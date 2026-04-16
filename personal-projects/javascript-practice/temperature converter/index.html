@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temperature Converter</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+  <main class="flex-center">
+    <header>
+      <h1>Temperature Converter</h1>
+    </header>
+
+    <section class="input-container">
+        <p>Enter A Temperature: </p>
+        <input type="text" id="myTemp">
+        <div class="radio-container">
+          <label for="myCelcius">
+            <input type="radio" name="inTemp" id="myCelcius" required>
+            Celcius
+          </label>
+          <label for="myFahren">
+            <input type="radio" name="inTemp" id="myFahren" required>
+            Fahrenheit
+          </label>
+          <label for="myKelvin">
+            <input type="radio" name="inTemp" id="myKelvin" required>
+            Kelvin
+          </label>
+        </div>
+    </section>
+
+    <section class="output-container">
+      <p>Convert To: </p>
+      <div class="radio-container">
+        <label for="myConCelcius">
+          <input type="radio" name="outTemp" id="myConCelcius" required>
+          Celcius
+        </label>
+        <label for="myConFahren">
+          <input type="radio" name="outTemp" id="myConFahren" required>
+          Fahrenheit
+        </label>
+        <label for="myConKelvin">
+          <input type="radio" name="outTemp" id="myConKelvin" required>
+          Kelvin
+        </label>
+      </div>
+    </section>
+
+      <footer class="flex-center">
+        <button type="submit" id="myBtn">Convert</button>
+        <p id="myP"></p>
+      </footer>
+  </main>
+  <script src="index.js"></script>
+</body>
+</html>
