@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Application Form</h1>
+    <h2>Please Enter Your Details</h2>
+  </header>
+  <main>
+      <section class="text-container">
+        <label for="firstNameText">
+          First Name: 
+          <input type="text" name="firstName" id="firstNameText" required>
+        </label>
+        <label for="middleNameText">
+          Middle Name: 
+          <input type="text" name="middleName" id="middleNameText" required>
+        </label>
+        <label for="lastNameText">
+          Last Name: 
+          <input type="text" name="lastName" id="lastNameText" required>
+        </label>
+      </section>
+
+      <section class="text-container">
+        <label for="emailAddress">
+          Email:
+          <input type="text" name="emailAddress" id="emailAddress" required>
+        </label>
+        <label for="phoneNumber">
+          Phone Number:
+          <input type="text" name="phoneNumber" id="phoneNumber" required>
+        </label>
+        <label for="birthdayDate">
+          Birthday:
+          <input type="date" name="birthdayDate" id="birthdayDate" >
+        </label>
+      </section>
+      <section class="text-container">
+        <p>Gender</p>
+        <input type="radio" name="radio" id="maleGender" required>
+        <label for="maleGender">Male</label>
+        <input type="radio" name="radio" id="femaleGender" required>
+        <label for="maleGender">Female</label>
+        <input type="radio" name="radio" id="preferNotToSay" required>
+        <label for="maleGender">Prefer not to say</label>
+      </section>
+      <button type="submit" id="registerBtn">Register</button>
+    <section>
+      <p id="myText"></p>
+    </section>
+  </main>
+  <script src="index.js"></script>
+</body>
+</html>

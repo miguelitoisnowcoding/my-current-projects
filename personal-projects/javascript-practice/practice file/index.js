@@ -1,13 +1,30 @@
+// let arr = [12, 8, 29, 10, 83, 2, 59, 42, 69, 100];
 
-document.getElementById("myBtn").onclick = function() {
-  console.log("Hello World");
-  let firstName = document.getElementById("myFirstName").value;
-  let lastName = document.getElementById("myLastName").value;
-  let age = document.getElementById("myAge").value;
+// for (let i = 0; i < arr.length; i++) {
+//   for (let j = 0; j < arr.length; j++) {
+//     if (arr[j] > arr[j + 1]) {
+//       let temp = arr[j];
+//       arr[j] = arr[j + 1];
+//       arr[j + 1] = temp;
+//     }
+//   }
+// }
 
-  if (age < 18) {
-    document.getElementById("myP").textContent = `Hello ${firstName} ${lastName}, you are still below the required age to buy alcohol.`;
+// for (let i = 0; i < arr.length; i++) {
+//   console.log(arr[i]);
+// }
+ 
+
+let arr = ["Miguel", 17, "Matthew", 18, "Lexa", 17, "MJ", 18];
+let num = [];
+
+for (let i = 0; i < arr.length; i++) {
+  if (isNaN(arr[i])) {
+    console.log(arr[i]);
   } else {
-    document.getElementById("myP").textContent = `Hello ${firstName} ${lastName}, you are within the required age to buy alcohol.`;
+    console.log(arr[i]);
+    arr[i] += num;
   }
 }
+
+console.log(num);
